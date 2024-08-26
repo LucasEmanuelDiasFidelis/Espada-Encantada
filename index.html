@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width">
+    <title>Em busca da espada perdida</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    
+    <main>
+        
+
+        <div class="passo ativo" id="passo-0">
+            <img src="img/passo-0.png" alt="">
+            <p>O herói, um jovem corajoso, é convocado pelo rei, que lhe confia a missão de recuperar a espada mágica
+                perdida, vital para proteger o reino.</p>
+            <p>O que você faz?</p>
+            <button class="btn-proximo" data-proximo="1">Sim, claro! Irei Salvar o Reino!</button>
+            <button class="btn-proximo" data-proximo="2">Tanto faz...</button>
+
+        </div>
+
+        <div class="passo" id="passo-1">
+            <img src="img/mago-vivo.png">
+            <p>Ele decide levar consigo um sabio, cuja sabedoria e poder são conhecidos em todas as terras.</p>
+            <p>O que você faz?</p>
+            <button class="btn-proximo" data-proximo="3">Perguntar ao sabio sobre o caminho.</button>
+
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="img/bobo.png" alt="bobo da corte">
+            <p>O rei não gostou muito da sua respota, então mandou você com o bobo da corte.</p>
+            <p>O que você faz?</p>
+            <button class="btn-proximo" data-proximo="5">Pergutar ao bobo qual o caminho.</button>
+            <button class="btn-proximo" data-proximo="4">lutar contra o bobo até a morte!</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <img src="img/caminho.png" alt="dois caminhos">
+            <p>O sabio te mostra o caminho, fogo ou gelo. afirmando que pelo gelo é mais seguro porém demorado, mais
+                pelo fogo é mais rapido porém mais arriscado.</p>
+            <p>O que você faz?</p>
+            <button class="btn-proximo" data-proximo="6">fogo.</button>
+            <button class="btn-proximo" data-proximo="7">Gelo</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/caminho.png" alt="dois caminhos">
+            <p>Você conseguiu vencer o bobo o derrotou com sua fraqueza.</p>
+            <p>O que você faz?</p>
+            <button class="btn-proximo" data-proximo="9">Ir pela fogo?.</button>
+            <button class="btn-proximo" data-proximo="7">ir pelo gelo?</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <img src="img/Morte.png" alt="Morte na lava">
+            <p>O bobo da corte te leva pro caminho errado e você morre queimado!</p>
+            <button class="btn-proximo" data-proximo="0">Reiniciar</button>
+
+
+        </div>
+        <div class="passo" id="passo-6">
+            <img src="img/Morte.png" alt="Morte na lava">
+            <p>Você não foi sabio... VIROU CHURRASCO!</p>
+            <button class="btn-proximo" data-proximo="0">Reiniciar</button>
+        </div>
+        <div class="passo" id="passo-7">
+
+            <video src="espada.mp4" autoplay loop muted></video>
+            <h1>PARABENS VOCÊ ENCONTROU A ESPADA E SALVOU SEU REINO!</h1>
+            <button class="btn-proximo" data-proximo="0">Reiniciar</button>
+            <button class="btn-proximo" data-proximo="8">Creditos</button>
+        </div>
+        <div class="passo" id="passo-8">
+
+
+            <video src="espada.mp4" autoplay loop muted></video>
+            <h1>By Lucas Emanuel Dias Fidelis</h1>
+            <p>Programação JavaScript by Lucas Emanuel Dias Fidelis</p>
+            <p>Front End - Html & CSS by Lucas Emanuel Dias Fidelis</p>
+            <p>Imagems & Videos by Lucas Emanuel Dias Fidelis</p>
+            <p>Audio by Lucas Emanuel Dias Fidelis</p>
+            
+            <button class="btn-proximo" data-proximo="0">Reiniciar</button>
+        </div>
+        <Audio id="musicafundo" src="Friends.mp3" controls autoplay></Audio>
+    </main>
+    <script src="scritp.js"></script>
+
+</body>
+
+</html>
